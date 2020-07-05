@@ -5,6 +5,7 @@ This project was undertaken as part of the "FreeCodeCamp - Responsive Web Design
 
 ## Objectives
 - Build a tribute page using HTML5 and CSS3
+- Ensure it uses responsive design
 - Meet the user stories criteria (https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page) 
 
 ## Technologies used
