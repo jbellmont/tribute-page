@@ -1,0 +1,192 @@
+/* || General styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    overflow: auto;
+}
+
+#main {
+    font-family: 'Source Sans Pro', sans-serif;
+    --red-color: #f24b4b;
+    --grey-color: #f5f7f6;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    color: var(--red-color);
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    color: var(--red-color);
+}
+
+/* title + media queries + animation */
+#title {
+    color: var(--red-color);
+    font-size: 75px;
+    text-align: center;
+    padding-top: 25px;
+    margin-top: 0;
+    font-family: 'Oswald', sans-serif;
+    animation-name: fade-in;
+    animation-duration: 5s;
+}
+
+@media (max-width: 700px) {
+    #title {
+        font-size: 3.8em;
+    }
+}
+
+@media (max-width: 500px) {
+    #title {
+        font-size: 3.2em;
+    }
+}
+
+@keyframes fade-in {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+  }
+/* end of title */
+
+p {
+    padding-right: 10px;
+}
+
+hr {
+    background-color: var(--red-color);
+    border: none;
+    height: 1px;
+}
+
+a {
+    color: var(--red-color);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    animation-name: tribute-link-hover-fade;
+    animation-duration: 2s;
+}
+
+@keyframes tribute-link-hover-fade {
+    0%   {color: var(--red-color);}
+    100% {color: black;}
+}
+
+/* || Overview flexbox  */
+
+header {
+    background-image: url('img/tokyo-akihabara.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#map-facts-flex-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.map-facts-flex-item-1 {
+    /* map */
+    flex: 1 2 35%;
+    background-position: center;
+    background-image: url('img/map-japan-2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: fade-in;
+    animation-duration: 5s;
+}
+
+.map-facts-flex-item-2 {
+    /* facts text */
+    flex: 1 2 65%;
+    padding: 10px;
+}
+
+
+/* || Tribute image section */ 
+
+#img-div {
+    /* Fushimi Inari container */
+    background-color: var(--grey-color);
+    text-align: center;
+    padding: 100px 0 100px 0;
+    width: 100%;
+}
+
+#img-div img {
+    width: 100vw;
+    max-width: 3735px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+}
+
+#img-caption {
+    font-weight: bolder;
+    padding-top: 10px;
+}
+
+#img-caption-2 {
+    font-weight: bolder;
+    padding-top: 10px;
+}
+
+
+/* || Tribute/My Experience section */ 
+
+#tribute-info {
+    padding: 3% 10% 3% 10%;
+}
+
+#tribute-link {
+    font-size: 1.1em;
+}
+
+
+/* || 2nd large image section */
+
+#img-div-2 {
+    /* Nara temple container */
+    background-color: var(--grey-color);
+    text-align: center;
+    padding: 100px 0 100px 0;
+    width: 100%;
+}
+
+#img-div-2 img {
+    width: 100vw;
+    max-width: 3872px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+}
+
+
+/* || Footer section */ 
+
+footer {
+    background-color: var(--red-color);
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    color: white;
+}
+
+footer a {
+    color: black;
+}
