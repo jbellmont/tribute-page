@@ -1,4 +1,7 @@
-# Japan - a tribute page
+# [Japan - a tribute page](https://jbellmont.github.io/tribute-page/)
+
+https://jbellmont.github.io/tribute-page/
+
 A single-page site dedicated to the country of Japan.
 
 This project was undertaken as part of the "FreeCodeCamp - Responsive Web Design" course.
